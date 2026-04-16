@@ -24,6 +24,10 @@ summary {
   display: block
 }
 
+article{
+  padding-left: 15px;
+}
+
 audio,
 canvas,
 progress,
@@ -896,241 +900,22 @@ pre code {
 .col-sm-7,
 .col-sm-8,
 .col-sm-9,
-.col-xs-1,
-.col-xs-10,
-.col-xs-11,
-.col-xs-12,
-.col-xs-2,
-.col-xs-3,
-.col-xs-4,
-.col-xs-5,
-.col-xs-6,
-.col-xs-7,
-.col-xs-8,
-.col-xs-9 {
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px
-}
-
-.col-xs-1,
-.col-xs-10,
-.col-xs-11,
-.col-xs-12,
-.col-xs-2,
-.col-xs-3,
-.col-xs-4,
-.col-xs-5,
-.col-xs-6,
-.col-xs-7,
-.col-xs-8,
-.col-xs-9 {
-  float: left
-}
-
-.col-xs-12 {
-  width: 100%
-}
-
-.col-xs-11 {
-  width: 91.66666667%
-}
-
-.col-xs-10 {
-  width: 83.33333333%
-}
-
-.col-xs-9 {
-  width: 75%
-}
-
-.col-xs-8 {
-  width: 66.66666667%
-}
-
-.col-xs-7 {
-  width: 58.33333333%
-}
-
-.col-xs-6 {
-  width: 50%
-}
-
-.col-xs-5 {
-  width: 41.66666667%
-}
-
-.col-xs-4 {
-  width: 33.33333333%
-}
-
-.col-xs-3 {
-  width: 25%
-}
-
-.col-xs-2 {
-  width: 16.66666667%
-}
-
-.col-xs-1 {
-  width: 8.33333333%
-}
-
-.col-xs-pull-12 {
-  right: 100%
-}
-
-.col-xs-pull-11 {
-  right: 91.66666667%
-}
-
-.col-xs-pull-10 {
-  right: 83.33333333%
-}
-
-.col-xs-pull-9 {
-  right: 75%
-}
-
-.col-xs-pull-8 {
-  right: 66.66666667%
-}
-
-.col-xs-pull-7 {
-  right: 58.33333333%
-}
-
-.col-xs-pull-6 {
-  right: 50%
-}
-
-.col-xs-pull-5 {
-  right: 41.66666667%
-}
-
-.col-xs-pull-4 {
-  right: 33.33333333%
-}
-
-.col-xs-pull-3 {
-  right: 25%
-}
-
-.col-xs-pull-2 {
-  right: 16.66666667%
-}
-
-.col-xs-pull-1 {
-  right: 8.33333333%
-}
-
-.col-xs-pull-0 {
-  right: 0
-}
-
-.col-xs-push-12 {
-  left: 100%
-}
-
-.col-xs-push-11 {
-  left: 91.66666667%
-}
-
-.col-xs-push-10 {
-  left: 83.33333333%
-}
-
-.col-xs-push-9 {
-  left: 75%
-}
-
-.col-xs-push-8 {
-  left: 66.66666667%
-}
-
-.col-xs-push-7 {
-  left: 58.33333333%
-}
-
-.col-xs-push-6 {
-  left: 50%
-}
-
-.col-xs-push-5 {
-  left: 41.66666667%
-}
-
-.col-xs-push-4 {
-  left: 33.33333333%
-}
-
-.col-xs-push-3 {
-  left: 25%
-}
-
-.col-xs-push-2 {
-  left: 16.66666667%
-}
-
-.col-xs-push-1 {
-  left: 8.33333333%
-}
-
-.col-xs-push-0 {
-  left: 0
-}
-
-.col-xs-offset-12 {
-  margin-left: 100%
-}
-
-.col-xs-offset-11 {
-  margin-left: 91.66666667%
-}
-
-.col-xs-offset-10 {
-  margin-left: 83.33333333%
-}
-
-.col-xs-offset-9 {
-  margin-left: 75%
-}
-
-.col-xs-offset-8 {
-  margin-left: 66.66666667%
-}
-
-.col-xs-offset-7 {
-  margin-left: 58.33333333%
-}
-
-.col-xs-offset-6 {
-  margin-left: 50%
-}
-
-.col-xs-offset-5 {
-  margin-left: 41.66666667%
-}
-
-.col-xs-offset-4 {
-  margin-left: 33.33333333%
-}
-
-.col-xs-offset-3 {
-  margin-left: 25%
-}
-
-.col-xs-offset-2 {
-  margin-left: 16.66666667%
-}
-
-.col-xs-offset-1 {
-  margin-left: 8.33333333%
-}
-
-.col-xs-offset-0 {
-  margin-left: 0
 }
 
 @media (min-width:768px) {
@@ -6348,7 +6133,7 @@ footer #bhinternet a {
 }
 
 footer #bhinternet a:hover {
-  color: #222
+  color: #fff !important;
 }
 
 footer #bhinternet a:hover span {
@@ -6661,6 +6446,8 @@ nav li a.active {
   top: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.40);
+  pointer-events: none;
+  z-index: 0;
 }
 
 header .paragraphe {
@@ -6959,7 +6746,7 @@ section.three h2 {
   letter-spacing: 1px;
   font-weight: 400;
   line-height: 28px;
-  height: 52px;
+  height: auto;
   border-radius: 52px;
   opacity: 0.9;
 }
@@ -6972,14 +6759,14 @@ section.three h2 {
 }
 
 .imgTop img {
-  width: 100%;
+  width: auto;
   max-width: 200px;
   margin: auto;
   padding: 15px;
 }
 
 .imgBottom img {
-  width: 100%;
+  width: auto;
   height: auto;
   max-width: 200px;
   margin: auto;
@@ -7255,6 +7042,8 @@ header .caption {
 }
 
 header .top {
+  position: relative;
+  z-index: 2;
   background: transparent;
   -webkit-transition: background 0.3s ease-out;
   transition: background 0.3s ease-out;
@@ -7267,6 +7056,12 @@ header .top .container {
 }
 
 header .top.fixmenu {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
   background: #fff;
   box-shadow: -6px 1px 2px 2px rgba(0, 0, 0, 0.08)
 }
@@ -7307,7 +7102,7 @@ header .top nav .dropdown-menu {
   border: 1px solid rgba(0, 0, 0, .1);
   border-radius: 4px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, .15);
-  z-index: 1050;
+  z-index: 100060;
   list-style: none;
   transition: none !important;
   -webkit-transition: none !important;
@@ -7349,6 +7144,13 @@ header .top nav .dropdown-toggle .caret {
 
 header .top.fixmenu nav .dropdown-menu li a {
   color: #1d2027 !important;
+}
+
+/* Nav: two uls under .row (valid HTML); reset list defaults so global nav ul li rules apply */
+header .top .navbar-collapse > .row > [class*="col-"] > ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 .logo2 {
@@ -7498,6 +7300,7 @@ section.one1 p {
   width: 100%;
   margin: auto;
   height: 300px !important;
+  object-fit: cover;
 }
 
 .thumb {
@@ -7519,6 +7322,14 @@ section.one1 p {
   width: 100%;
   margin: auto;
   height: 200px !important;
+}
+
+@media(max-width: 990px) {
+
+.thumb img {
+  object-fit: cover;
+  height: 100% !important;
+}
 }
 
 section.two2 {
@@ -7713,7 +7524,8 @@ height: 500px;
   }
 
   img {
-    max-width: 100%;
+    max-width: 100% !important;
+    margin: 0.5rem 0;
   }
 
   .logo2 {

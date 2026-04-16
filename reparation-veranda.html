@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" type="text/css" href="./assets/ressources/css/lightbox.css" />
- 
+
   <!-- <link rel="stylesheet" type="text/css" href="./assets/ressources/css/bxslider.css" /> -->
 	
   <!--[if lt IE 9]>
@@ -95,10 +95,9 @@
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="">
-            <div class="row">
-
-              <div class="col-sm-5">
+          <div class="row">
+            <div class="col-sm-5">
+              <ul>
                 <li><a href="./index.html">Accueil</a></li>
 
                 <li class="dropdown">
@@ -120,18 +119,20 @@
                     <li><a href="./mise-en-oeuvre.html">Mise en œuvre d’un projet</a></li>
                   </ul>
                 </li>
-              </div>
+              </ul>
+            </div>
 
-              <div class="col-sm-2 nopad">
-                <div class="logo">
-                  <a href="./index.html">
-                    <img src="./assets/img/logoRN.png" class="img-responsive hidden-xs"
-                      id="logo2" alt="logo baies et vérandas">
-                  </a>
-                </div>
+            <div class="col-sm-2 nopad">
+              <div class="logo">
+                <a href="./index.html">
+                  <img src="./assets/img/logoRN.png" class="img-responsive hidden-xs"
+                    id="logo2" alt="logo baies et vérandas">
+                </a>
               </div>
+            </div>
 
-              <div class="col-sm-5">
+            <div class="col-sm-5">
+              <ul>
                 <li><a href="./contact.html">Contact</a></li>
                 <li><a href="./devis.html">Devis</a></li>
                 <li class="phone">
@@ -139,10 +140,9 @@
                     <i class="fa fa-phone" aria-hidden="true"></i> 01 60 86 71 21
                   </a>
                 </li>
-              </div>
-
+              </ul>
             </div>
-          </ul>
+          </div>
         </div>
       </nav>
     </div>
@@ -161,11 +161,11 @@
   <div class="row">
    <div class="col-sm-12">
     <p><strong>Véranda 45</strong> ne vous propose pas uniquement l'implémentation et la finition de vérandas en aluminium, l'entreprise vous propose également un service d'entretien et de maintenance afin de réparer votre équipement.</p>
-    <p>Nous avons mis en place un dispositif pour répondre aux urgences (réparation d'une vitre, entretien de la structure...). Sur simple appel au <a href="tel:0160867121">01 60 86 71 21</a> du lundi au vendredi ou via le formulaire en ligne <strong>à tout moment, une équipe d'experts viendra chez vous pour procéder aux réparations et au remplacement de pièces abîmées</strong>.</p>
+    <p>Nous avons mis en place un dispositif pour répondre aux urgences (réparation d'une vitre, entretien de la structure...). Sur simple appel au <a href="tel:0185538978">01 60 86 71 21</a> du lundi au vendredi ou via le formulaire en ligne <strong>à tout moment, une équipe d'experts viendra chez vous pour procéder aux réparations et au remplacement de pièces abîmées</strong>.</p>
     <p>Nous répondons à toutes vos urgences, qu'elles soient pour une réparation d'une vitre ou autre ou sur rendez-vous pour un entretien de votre véranda. Notre équipe d'experts est présente pour vous accompagner dans chacune de vos rénovations.</p>
     <p>Partout dans le département du Loiret, <strong>Véranda 45</strong> intervient pour pallier votre besoin.</p>
     <h2>Demandez votre devis de réparation</h2>
-    <p>Contactez-nous au <a href="tel:0160867121">01 60 86 71 21</a> ou remplissez notre <a href="./devis.html">formulaire de devis</a> pour obtenir une estimation gratuite de nos services de réparation de véranda.</p>
+    <p>Contactez-nous au <a href="tel:0185538978">01 60 86 71 21</a> ou remplissez notre <a href="./devis.html">formulaire de devis</a> pour obtenir une estimation gratuite de nos services de réparation de véranda.</p>
    </div>
   </div>
  </div>
@@ -174,7 +174,7 @@
   </div>
 
   <div id="fixphone">
-    <a href="tel:0160867121" class="fixphone" title="0160867121"><i class="fas fa-phone-alt" aria-hidden="true"></i> 01 60 86 71 21</a>
+    <a href="tel:0185538978" class="fixphone" title="0185538978"><i class="fas fa-phone-alt" aria-hidden="true"></i> 01 60 86 71 21</a>
   </div>
 
   <div class="backTotop active">
@@ -198,7 +198,7 @@
           <li><a href="./nos-verandas.html">Nos types de vérandas</a></li>
           <li><a href="./galerie.html">Galerie</a></li>
           <li><a href="./mise-en-oeuvre.html">Mise en œuvre d’un projet</a></li>
-          <li><a href="actualites">Actualites </a></li>
+          <li><a href="./actualites.html">Actualites </a></li>
           <li><a href="./devis.html">Devis</a></li>
           <li><a href="./contact.html">Contact</a></li>
           <li><a href="./veranda-montargis.html">Veranda montargis</a></li>
@@ -304,36 +304,40 @@
 
 
 <script type="text/javascript">
-  $(window).scroll(function () {
+  (function () {
+    var logosFixed = false;
 
-    if ($(document).scrollTop() > 1) {
-      $(".top").animate({ "opacity": 1 }, 600);
-      $(".top").addClass('fixmenu');
-      var x = document.getElementById("logo2");
-      x.setAttribute("src", "./assets/img/logoRN.png");
-      x.setAttribute("alt", "Logo 2 baies et vérandas");
-      // $("#logo2").css('margin-left','10%');
-
-      var y = document.getElementById("logo1");
-      y.setAttribute("src", "./assets/img/logoRN.png");
-      y.setAttribute("alt", "Logo 2 baies et vérandas");
-
+    function syncLogos() {
+      var x = document.getElementById('logo2');
+      var y = document.getElementById('logo1');
+      if (!y) return;
+      y.setAttribute('src', './assets/img/logoRN.png');
+      if (x) {
+        x.setAttribute('src', './assets/img/logoRN.png');
+        x.setAttribute('alt', logosFixed ? 'Logo 2 baies et vérandas' : 'logo baies et vérandas');
+      }
+      y.setAttribute('alt', 'Logo 2 baies et vérandas');
     }
-    else {
-      $(".top").animate({ "opacity": 1 }, 600);
-      $(".top").removeClass('fixmenu');
-      var x = document.getElementById("logo2");
-      x.setAttribute("src", "./assets/img/logoRN.png");
-      x.setAttribute("alt", "logo baies et vérandas")
-      // $("#logo2").css('margin-left','0');
 
+    function onScroll() {
+      var st = $(document).scrollTop();
+      var $top = $('.top');
+      var shouldFix = st > 1;
 
-      var y = document.getElementById("logo1");
-      y.setAttribute("src", "./assets/img/logoRN.png");
-      y.setAttribute("alt", "Logo 2 baies et vérandas");
-
+      if (shouldFix && !$top.hasClass('fixmenu')) {
+        $top.addClass('fixmenu');
+        logosFixed = true;
+        syncLogos();
+      } else if (!shouldFix && $top.hasClass('fixmenu')) {
+        $top.removeClass('fixmenu');
+        logosFixed = false;
+        syncLogos();
+      }
     }
-  });
+
+    $(window).on('scroll', onScroll);
+    $(onScroll);
+  })();
 </script>
 
 <!-- reCAPTCHA Form Handling -->

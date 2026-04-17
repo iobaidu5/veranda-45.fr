@@ -7330,6 +7330,10 @@ section.one1 p {
   object-fit: cover;
   height: 100% !important;
 }
+
+.col-12.col-md-4 img {
+  width: 100%;
+}
 }
 
 section.two2 {

@@ -101,7 +101,7 @@
                 <li><a href="./index.html">Accueil</a></li>
 
                 <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <a href="javascript:void(0)" class="dropdown-toggle nav-dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
                     Nos vérandas <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu">
@@ -111,7 +111,7 @@
                 </li>
 
                 <li class="dropdown">
-                  <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <a href="javascript:void(0)" class="dropdown-toggle nav-dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
                     Nos réalisations <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu">
@@ -601,6 +601,44 @@
     $(window).on('scroll', onScroll);
     $(onScroll);
   })();
+</script>
+
+<script type="text/javascript">
+  (function ($) {
+    var $scope = $('header .top');
+
+    function closeNavDropdowns() {
+      $scope.find('li.dropdown').removeClass('open');
+      $scope.find('.nav-dropdown-toggle').attr('aria-expanded', 'false');
+    }
+
+    $(document).on('click', 'header .top .nav-dropdown-toggle', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      var $li = $(this).closest('li.dropdown');
+      var wasOpen = $li.hasClass('open');
+      closeNavDropdowns();
+      if (!wasOpen) {
+        $li.addClass('open');
+        $(this).attr('aria-expanded', 'true');
+      }
+    });
+
+    $(document).on('click', function (e) {
+      if ($(e.target).closest('header .top li.dropdown').length) {
+        return;
+      }
+      closeNavDropdowns();
+    });
+
+    $(document).on('click', 'header .top .dropdown-menu a', function () {
+      closeNavDropdowns();
+    });
+
+    $(window).on('scroll', function () {
+      closeNavDropdowns();
+    });
+  })(jQuery);
 </script>
 
 <!-- reCAPTCHA Form Handling -->

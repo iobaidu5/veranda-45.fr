@@ -7078,7 +7078,7 @@ header .top.fixmenu .container {
   color: #080808 !important;
 }
 
-/* Navbar dropdown: no slide, overlay, menu in a row */
+/* Navbar dropdown: vertical list (column) */
 header .top .container,
 header .top nav,
 header .top .navbar-collapse,
@@ -7088,6 +7088,11 @@ header .top .collapse {
 
 header .top nav .dropdown {
   position: relative;
+}
+
+header .top nav li.dropdown:not(.open) > .dropdown-menu {
+  display: none !important;
+  visibility: hidden !important;
 }
 
 header .top nav .dropdown-menu {
@@ -7102,19 +7107,29 @@ header .top nav .dropdown-menu {
   border: 1px solid rgba(0, 0, 0, .1);
   border-radius: 4px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, .15);
-  z-index: 100060;
+  z-index: 100070;
   list-style: none;
   transition: none !important;
   -webkit-transition: none !important;
-  visibility: hidden;
+  pointer-events: auto;
 }
 
-header .top nav .dropdown.open .dropdown-menu {
+header .top nav li.dropdown.open > .dropdown-menu {
   display: flex !important;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   align-items: stretch;
-  visibility: visible;
+  min-width: 220px;
+  visibility: visible !important;
+}
+
+header .top.fixmenu nav li.dropdown {
+  position: relative;
+  z-index: 100071;
+}
+
+header .top.fixmenu nav li.dropdown.open > .dropdown-menu {
+  z-index: 100072;
 }
 
 header .top nav .dropdown-menu li {
@@ -8427,4 +8442,15 @@ nav .col-sm-4 {
   -ms-transition: .7s ease-in-out;
   -o-transition: .7s ease-in-out;
   transition: .7s ease-in-out
+}
+
+/* Pages vérandas: image + titre + texte regroupés par colonne (ex. Montargis, Orléans) */
+.veranda-entretien-block img {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.veranda-entretien-block h3 {
+  margin-top: 0;
 }

@@ -2,11 +2,13 @@
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
 }
 
 body {
-  margin: 0px
+  margin: 0px;
+  overflow-x: hidden;
 }
 
 article,
@@ -26,6 +28,7 @@ summary {
 
 article{
   padding-left: 15px;
+   padding-right: 5px;
 }
 
 audio,
@@ -7182,16 +7185,13 @@ section.six .row {
 }
 
 header.pp {
-  /*  min-height: auto;
-    background-image: none;
-    background-color: white;
-    position: relative;
-    background-size: 100% 100%;*/
   min-height: 300px;
+  background-color: #1d2027;
   background-image: url(../../img/slider1_bis.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   position: relative;
-  background-position: center;
-  /* background-size: 100% 100%;*/
 }
 
 /*header.pp nav li a {
@@ -7441,8 +7441,22 @@ height: 500px;
 
 .ft .row {
   margin-left: -15px;
-  margin-right: 0px;
+  margin-right: -15px;
 }
+
+/* Certifications dans le footer : images ne doivent pas dépasser les colonnes (évite chevauchement tablette) */
+footer .ft .imgTop img,
+footer .ft .imgBottom img {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
 
 /*/////////////RESPONSIVE//////////////////////*/
 
@@ -7474,12 +7488,19 @@ height: 500px;
   }
 
   header.pp {
-    min-height: 248px;
+    min-height: 220px;
+    background-size: cover;
+    background-position: center center;
     border-bottom: 1px solid #f49505;
   }
 
-  header .top .container {
+  /* Fond blanc réservé aux pages sans header.pp ; sur .pp l'image doit rester visible */
+  header:not(.pp) .top .container {
     background-color: #fff;
+  }
+
+  header.pp .top:not(.fixmenu) .container {
+    background-color: transparent;
   }
 
   header .caption {

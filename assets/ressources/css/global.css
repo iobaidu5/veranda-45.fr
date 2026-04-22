@@ -27,8 +27,8 @@ summary {
 }
 
 article{
-  padding-left: 15px;
-   padding-right: 5px;
+  padding-left: 10px;
+   padding-right: 15px;
 }
 
 audio,
@@ -7938,6 +7938,7 @@ nav li {
 
 p {
   text-align: justify;
+  padding-right: 5px !important;
 }
 
 .padtop1 {

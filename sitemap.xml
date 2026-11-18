@@ -1,55 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>http://localhost:4000/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/actualites</loc>
-</url>
-<url>
-<loc>http://localhost:4000/bhinternet</loc>
-</url>
-<url>
-<loc>http://localhost:4000/contact</loc>
-</url>
-<url>
-<loc>http://localhost:4000/devis</loc>
-</url>
-<url>
-<loc>http://localhost:4000/message-envoye</loc>
-</url>
-<url>
-<loc>http://localhost:4000/galerie</loc>
-</url>
-<url>
-<loc>http://localhost:4000/mentions-legales</loc>
-</url>
-<url>
-<loc>http://localhost:4000/mise-en-oeuvre</loc>
-</url>
-<url>
-<loc>http://localhost:4000/nos-verandas</loc>
-</url>
-<url>
-<loc>http://localhost:4000/presentation</loc>
-</url>
-<url>
-<loc>http://localhost:4000/reparation-veranda</loc>
-</url>
-<url>
-<loc>http://localhost:4000/veranda-amilly</loc>
-</url>
-<url>
-<loc>http://localhost:4000/veranda-montargis</loc>
-</url>
-<url>
-<loc>http://localhost:4000/veranda-olivet</loc>
-</url>
-<url>
-<loc>http://localhost:4000/veranda-orleans</loc>
-</url>
-<url>
-<loc>http://localhost:4000/assets/img/attestation-decennale-2017.pdf</loc>
-<lastmod>2026-02-25T01:21:04+05:00</lastmod>
-</url>
+<?xml version="1.0" encoding="UTF-8"?> <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> <url> <loc>https://www.veranda-45.fr/</loc> </url>
+<url> <loc>https://www.veranda-45.fr/actualites.html</loc> </url>
+<url> <loc>https://www.veranda-45.fr/bhinternet.html</loc> </url>
+<url> <loc>https://www.veranda-45.fr/contact.html</loc> </url>
+<url> <loc>https://www.veranda-45.fr/devis.html</loc> </url>
+<url> <loc>https://www.veranda-45.fr/message-envoye.html</loc> </url>
+<url> <loc>https://www.veranda-45.fr/galerie.html</loc> </url>
+<url> <loc>https://www.veranda-45.fr/mentions-legales.html</loc> </url>
+<url> <loc>https://www.veranda-45.fr/mise-en-oeuvre.html</loc> </url>
+<url> <loc>https://www.veranda-45.fr/nos-verandas.html</loc> </url>
+<url> <loc>https://www.veranda-45.fr/presentation.html</loc> </url>
+<url> <loc>https://www.veranda-45.fr/reparation-veranda.html</loc> </url>
+<url> <loc>https://www.veranda-45.fr/veranda-amilly.html</loc> </url>
+<url> <loc>https://www.veranda-45.fr/veranda-montargis.html</loc> </url>
+<url> <loc>https://www.veranda-45.fr/veranda-olivet.html</loc> </url>
+<url> <loc>https://www.veranda-45.fr/veranda-orleans.html</loc> </url>
+<url> <loc>https://www.veranda-45.fr/veranda-surface-habitable-loi-boutin.html</loc> </url>
 </urlset>
